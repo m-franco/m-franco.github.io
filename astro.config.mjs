@@ -2,7 +2,14 @@ import { defineConfig } from 'astro/config';
 
 import tailwind from "@astrojs/tailwind";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()]
+    site: 'https://m-franco.github.io',
+    integrations: [
+        tailwind(),
+        partytown({
+            config: {
+                forward: ["dataLayer.push"],
+            },
+        }),
+    ]
 });
