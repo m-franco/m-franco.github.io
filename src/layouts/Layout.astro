@@ -16,6 +16,16 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
+    <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-GNCT8SRLL8"></script>
+    <script type="text/partytown">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GNCT8SRLL8');
+    </script>
+    <script type="text/partytown" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5623233007287475"
+    crossorigin="anonymous"></script>
 	<body>
 		<slot />
 	</body>
